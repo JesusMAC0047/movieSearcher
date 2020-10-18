@@ -1,0 +1,58 @@
+@import '../../../styles';
+
+#recommended{
+       margin-top: 10px;
+       margin-bottom: 30px;
+       margin-left: 20%;
+       margin-right: 20%;
+       padding-top: 40px;
+       text-align: center;
+       
+       h2{
+              text-align: center;
+              font-size: $h2Size;
+              font-family: $font_title;
+              width: 100%;
+              text-transform: uppercase;
+       }
+       
+       .carousel{
+              padding-top: 20px;
+              text-align: center;
+              height: 300px;
+              width: 100%;
+              
+              p{
+                     color: $colorSecond;
+                     font-family: $font_text;
+              }
+              
+              h3{
+                     color: black;
+                     font-family: $font_text;
+                     text-align: center;
+              }
+              
+              img{
+                     height: 300px;
+              }
+              
+              .picsum-img-wrapper{
+                     float: left;
+                     width: 20%;
+              }
+              
+              .carousel-caption{
+                     float: right;
+                     height: 100%;
+                     width: 50%;
+                     text-align: justify;
+                     margin-left: 20%;
+                     padding-top: 15px;
+              }
+       }
+       
+       .carousel:focus{
+              outline: none;
+       }
+}

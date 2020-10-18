@@ -1,0 +1,51 @@
+@import '../../../styles';
+
+h1{
+       font-family: $font_title;
+       width: 100%;
+       font-size: 100px;
+       text-align: center;
+       margin-top: 0px;
+       padding-top: 30px;
+       margin-bottom: 30px;
+}
+
+.form{
+       text-align: center;
+       margin-top: 40px;
+       margin-bottom: 40px;
+       
+       input{
+              width: 60%;
+              height: 40px;
+              border: 3px solid $colorSecond;
+              border-radius: 20px;
+              padding-left: 20px;
+       }
+       
+       input::placeholder{
+              text-align: center;
+       }
+       
+       input[type="text"]:focus {
+              background-color: #00ace075;
+              border-radius: 20px;
+              border: 3px solid black;
+              outline: none;
+       }
+       
+       button{
+              margin-left: 10px;
+              padding: 5px;
+              height: 40px;
+              padding-right: 10px;
+              padding-left: 10px;
+              color: $colorText;
+       }
+       
+       #infoText{
+              width: 100%;
+              font-size: $sizeText;
+              text-align: center;
+       }
+}

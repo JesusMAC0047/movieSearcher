@@ -1,0 +1,106 @@
+// git push -u origin main
+
+//Titulos
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+$font_title: 'Space Mono',
+monospace;
+
+//Texto normal
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+$font_text: 'Karla',
+sans-serif;
+
+$colorMenu: #055509;
+$colorSecond:  #00ace0;
+$colorText: rgb(255, 255, 255);
+$sizeText: 20px;
+$sizeTittle: 40px;
+$h2Size: 30px;
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+body {
+  background-image: url(../src/assets/img/leaves.png);
+}
+
+p {
+  font-family: $font_text;
+  font-size: $sizeText;
+}
+
+a {
+  text-decoration: none;
+}
+
+#menu{
+       position: static;
+       border-bottom: 3px solid $colorSecond;
+       background-color: $colorMenu;
+       width: 100%;
+       height: 60px;
+       margin-bottom: 20px;
+       
+       ul{
+              list-style-type: none;
+              width: 85%;
+              float: right;
+              
+              li{
+                     float: left;
+                     width: 20%;
+                     height: 60px;
+                     text-align: center;
+                     transition: all 300ms;
+                     padding-top: 15px;
+                     
+                     a{
+                            text-decoration: none;
+                            color: rgb(255, 255, 255);
+                            font-family: $font_text;
+                            font-size: 20px;
+                            margin-bottom: 30px;
+                            display: inline-block;
+                     }
+              }
+              
+              li:hover{
+                     background-color: $colorSecond;
+              }
+       }
+}
+
+#content{
+       width: 80%;
+       min-height: 500px;
+       padding: 0px;
+       margin: 0px;
+       margin-left: 10%;
+       margin-right: 10%;
+}
+
+
+
+
+footer{
+       background-color: $colorMenu;
+       margin-top: 20px;
+       padding-top: 30px;
+       width: 100%;
+       height: 80px;
+       border-top: 3px solid $colorSecond;
+       
+       p{
+              color: $colorText;
+              font-size: 20px;
+              text-align: center;
+              font-family: $font_text;
+       }
+}
