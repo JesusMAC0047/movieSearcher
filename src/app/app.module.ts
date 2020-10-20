@@ -9,12 +9,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { RecommendedComponent } from './components/recommended/recommended.component';
+import { MovieComponent } from './components/movie/movie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    RecommendedComponent
+    RecommendedComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,
