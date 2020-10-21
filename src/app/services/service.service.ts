@@ -17,5 +17,9 @@ export class ServiceService {
   getRecommended(element): Observable<any>{
     return this.http.get(this.url+element);
   }
+  
+  getMovie(movie): Observable<any>{
+    return this.http.get(this.url+movie);
+  }
 
 }

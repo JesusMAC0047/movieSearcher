@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbAlertConfig } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -12,7 +13,8 @@ export class MainComponent implements OnInit {
   public inputSearch: string = "";
   public alertMessage: any;
   
-  constructor( private configAlert:NgbAlertConfig) {
+  constructor( private configAlert:NgbAlertConfig,
+               private router:Router ) {
   
     configAlert.type = "warning";
     configAlert.dismissible = true;
@@ -26,14 +28,14 @@ export class MainComponent implements OnInit {
   }
 
   onSearch(formSearch){
-    console.log(formSearch.value);
+  
     let search = formSearch.value.inputSearch;
+    
     if (search == "") {
-      document.getElementById('alerta').style.display="block";
-      console.log(search);
-    }else{
-      console.log(this.inputSearch);
-      document.getElementById('alerta').style.display="none";
+      document.getElementById('alerta').style.display = "block";
+    } else {
+      document.getElementById('alerta').style.display = "none";
+      this.router.navigate(['movie/' + this.inputSearch]);
     }
   }
 

@@ -2,7 +2,7 @@
   <h1>Movie Searcher</h1>
 </div>
 <div class="form">
-  <form action="#" #formSearch="ngForm" (ngSubmit)="onSearch(formSearch)">
+  <form #formSearch="ngForm" (ngSubmit)="onSearch(formSearch)">
     <input type="text" placeholder="{{ placeholder }}" name="inputSearch" [(ngModel)]='inputSearch'/>
     <button type="submit" class="btn btn-secondary">Buscar</button>
     <p id="infoText">Ingresa la pelicula que desas buscar</p>
