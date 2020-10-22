@@ -1,0 +1,19 @@
+@import '../../../styles';
+
+#alertMessage{
+       
+       height: 60px;
+       width: 70%;
+       margin-left: 15%;
+       margin-right: 15%;
+       margin-top: 10px;
+       text-align: center;
+       
+       #alerta{
+              display: none;
+              height: 60px;
+              width: 100%;
+              font-family: $font_text;
+              padding-top: 15px;
+       }
+}

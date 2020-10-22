@@ -1,2 +1,15 @@
-<p>movie works!</p>
-<p>{{ movieName }}</p>
+<div>
+  <p id="alertMessage">
+    <ngb-alert id="alerta" (close)="close('alerta')">
+      <strong>{{ alertMessage.type }}</strong> {{ alertMessage.message }}
+    </ngb-alert>
+  </p>
+</div>
+<div>
+  <h2>{{ movieResult.Title }}</h2>
+  <img src="{{ movieResult.Poster }}">
+  <p>{{ movieResult.Plot }}</p>
+  <h3>Datos generales</h3>
+  <p>{{ movieResult.Genre }}</p>
+  <article>{{ movieResult.Actors }}</article>
+</div>
