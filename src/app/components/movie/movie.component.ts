@@ -15,7 +15,6 @@ export class MovieComponent implements OnInit {
   public movie: string;
   public review: any;
   public alertMessage: any;
-  public movieResult: any;
   public movieMessage: any;
 
   constructor(private _route: ActivatedRoute,
@@ -27,13 +26,14 @@ export class MovieComponent implements OnInit {
 
     this.alertMessage = {
       type: 'LO SENTIMOS',
-      message: 'No se encontro la pelicula, verifique que la escribio bien o busque alguna otra'
+      message: 'No se encontro la pelicula que busca, verifique que escribio correctamente el titulo en ingles.'
     };
     
     this.movieMessage = {
       date: 'Datos generales',
       actors: 'Actores: ',
-      genre: 'Genero: '
+      genre: 'Genero: ',
+      plot: 'Trama'
     };
 
     this.movieName = this._route.snapshot.paramMap.get('name');
@@ -58,7 +58,8 @@ export class MovieComponent implements OnInit {
         } else {
 
           document.getElementById('alerta').style.display = "none";
-          this.movieResult = this.review;
+          console.log(this.review);
+          return this.review;
         }
       },
       error => {
