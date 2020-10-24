@@ -11,7 +11,7 @@
        
        #alerta{
               display: none;
-              height: 60px;
+              height: 100px;
               width: 100%;
               font-family: $font_text;
               padding-top: 15px;
@@ -20,6 +20,7 @@
 
 #movieReview{
 
+       display: none;
        margin: 0px;
        width: 100%;
        height: auto;

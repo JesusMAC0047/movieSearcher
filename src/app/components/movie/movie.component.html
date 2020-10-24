@@ -6,13 +6,13 @@
   </p>
 </div>
 <div id="movieReview">
-  <h2>{{ review.Title }}</h2>
-  <img src="{{ review.Poster }}">
+  <h2 *ngIf="review">{{ review.Title }}</h2>
+  <img *ngIf="review" src="{{ review.Poster }}">
   <article>
     <h3>{{ movieMessage.date }}</h3>
-    <p> <strong>{{ movieMessage.genre }}</strong> {{ review.Genre }}</p>
-    <p> <strong>{{ movieMessage.actors }}</strong> {{ review.Actors }}</p>
+    <p *ngIf="review"> <strong>{{ movieMessage.genre }}</strong> {{ review.Genre }}</p>
+    <p *ngIf="review"> <strong>{{ movieMessage.actors }}</strong> {{ review.Actors }}</p>
     <h3>{{ movieMessage.plot }}</h3>
-    <p>{{ review.Plot }}</p>
+    <p *ngIf="review">{{ review.Plot }}</p>
   </article>
 </div>

@@ -53,12 +53,13 @@ export class MovieComponent implements OnInit {
 
         if (this.review.Response == "False") {
 
+          document.getElementById('movieReview').style.display = "none";
           document.getElementById('alerta').style.display = "block";
 
         } else {
 
           document.getElementById('alerta').style.display = "none";
-          console.log(this.review);
+          document.getElementById('movieReview').style.display = "block";
           return this.review;
         }
       },

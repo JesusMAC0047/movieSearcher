@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { RecommendedComponent } from './components/recommended/recommended.component';
 import { MovieComponent } from './components/movie/movie.component';
+import { InformationComponent } from './components/information/information.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     RecommendedComponent,
-    MovieComponent
+    MovieComponent,
+    InformationComponent
   ],
   imports: [
     BrowserModule,
