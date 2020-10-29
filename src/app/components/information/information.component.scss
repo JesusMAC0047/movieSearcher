@@ -19,3 +19,12 @@
               font-family: $font_text;
        }
 }
+
+@media (max-width: 768px){
+
+       #information{
+              width: 90%;
+              margin-left: 5%;
+              margin-right: 5%;
+       }
+}

@@ -93,8 +93,9 @@ footer{
        background-color: $colorMenu;
        margin-top: 20px;
        padding-top: 30px;
+       padding-bottom: 20px;
        width: 100%;
-       height: 80px;
+       height: auto;
        border-top: 3px solid $colorSecond;
        
        p{
@@ -102,5 +103,52 @@ footer{
               font-size: 20px;
               text-align: center;
               font-family: $font_text;
+       }
+}
+
+@media (max-width: 1180px) {
+
+       #content{
+              width: 90%;
+              margin-left: 5%;
+              margin-right: 5%;
+       }
+}
+
+@media (max-width: 1024px) {
+
+       #content{
+              width: 96%;
+              margin-left: 2%;
+              margin-right: 2%;
+       }
+       
+       footer{
+              height: auto;
+       }
+}
+
+@media (max-width: 768px) {
+
+       $sizeTitle: 30px;
+       $h2Size: 25px;
+       $sizeText: 15px;
+
+       #content{
+              width: 100%;
+       }
+}
+
+@media (max-width: 576px) {
+       
+       #menu{
+       
+              ul{
+                     width: 100%;
+                     
+                     li{
+                            width: 50%;
+                     }
+              }
        }
 }

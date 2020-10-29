@@ -67,3 +67,22 @@ h1{
               }
        }
 }
+
+@media (max-width: 768px) {
+
+       .form{
+              width: 100%;
+              
+              input{
+                     width: 80%;
+              }
+              
+              #alertMessage{
+                     height: auto;
+                     
+                     #alerta{
+                            height: auto;
+                     }
+              }
+       }
+}
