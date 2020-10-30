@@ -93,23 +93,37 @@
 
 @media (max-width: 768px) {
 
-       .carousel{
-              padding: 5px;
+       #recommended{
               width: 100%;
               height: auto;
-              
-              .picsum-img-wrapper{
-                     width: 30%;
-                     margin-left: 5px;
-                     margin-bottom: 10px;
-                     float: left;
-              }
-              
-              .carousel-caption{
-                     height: 100%;
-                     width: 40%;
-                     margin-left: 50%;
-                     float: left;
+              text-align: center;
+              margin: 0px;
+              padding: 0px;
+       
+              .carousel{
+                     padding: 5px;
+                     width: 100%;
+                     height: auto;
+                     text-align: center;
+                     margin: 0px;
+                     float: none;
+                     
+                     .picsum-img-wrapper{
+                            width: 100%;
+                            position: relative;
+                            float: none;
+                            margin-left: 0%;
+                     }
+                     
+                     .carousel-caption{
+                            height: 100%;
+                            width: 100%;
+                            margin-top: 50px;
+                            float: none;
+                            position: relative;
+                            margin-left: -10%;
+                            padding-right: 60px;
+                     }
               }
        }
 }
